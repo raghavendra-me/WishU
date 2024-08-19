@@ -9,6 +9,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+audio {
+    display: none;
+ }
+ 
 img {
     width: 500px;
     height: 400px;
