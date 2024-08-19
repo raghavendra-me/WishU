@@ -212,3 +212,42 @@ h5 {
         display: none;
     }
 }
+
+/* Hide all swipe cards initially */
+.swipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .swipe-card {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  /* Show the active card */
+  .swipe-card.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Swiping left animation */
+  .swipe-card.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  /* Final div hidden initially */
+  .final-div {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
