@@ -11,11 +11,16 @@
 </head>
 
 <body>
-  <audio src="assets\aud.mp3" autoplay loop muted></audio>
+  <iframe src="aud.mp3" allow="autoplay" style="display: none;" id="iframeAudio">
+  </iframe> 
+  <audio autoplay loop  id="playAudio">
+    <source src="aud.mp3">
+</audio>
+
   <div class="container">
     <div id="one" class="one">
       <h1>Hey
-        <span id="name" class="name animate__delay-1s">Ana</span>
+        <span id="name" class="name animate__delay-1s">Pranati</span>
       </h1>
       <p class="two animate__delay-2s" id="greetingText">It's your birthday!!! :D</p>
     </div>
@@ -33,7 +38,7 @@
       <a type="button" href="https://www.youtube.com/watch?v=k3zimSRKqNw" title="Follow you">
         <span class="heart animate__delay-5s"><span>Made with </span><img
             class="heart-icon animate__delay-5s" src="assets/icons8-diamond-heart-48.png"
-            style="width: 18px;height: 15px;" alt="3" title="Hey D, :)"> by <span id="heartText">Architrixs</span></span>
+            style="width: 18px;height: 15px;" alt="3" title="Hey D, :)"> by <span id="">MohanKrishna</span></span>
       </a>
       <a type="button" class="refresh-btn animate__delay-5s" onClick="refreshPage()"><img
           src="assets/icons8-refresh-30.png" style="width: 23px;height: 23px;" alt="Refresh" title="Refresh"></a>
